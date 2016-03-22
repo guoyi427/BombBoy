@@ -16,6 +16,8 @@
 		28B95E6B1CA1262800748F1E /* BBGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B95E6A1CA1262800748F1E /* BBGameViewController.m */; };
 		28B95E751CA12A0600748F1E /* BBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B95E741CA12A0600748F1E /* BBBaseViewController.m */; };
 		28B95E781CA12D6000748F1E /* BBGamePad.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B95E771CA12D6000748F1E /* BBGamePad.m */; };
+		28B95E7B1CA1599000748F1E /* BBGameBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B95E7A1CA1599000748F1E /* BBGameBackgroundView.m */; };
+		28B95E7E1CA15D1D00748F1E /* BBBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B95E7D1CA15D1D00748F1E /* BBBaseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		28B95E741CA12A0600748F1E /* BBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBaseViewController.m; sourceTree = "<group>"; };
 		28B95E761CA12D6000748F1E /* BBGamePad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBGamePad.h; sourceTree = "<group>"; };
 		28B95E771CA12D6000748F1E /* BBGamePad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBGamePad.m; sourceTree = "<group>"; };
+		28B95E791CA1599000748F1E /* BBGameBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBGameBackgroundView.h; sourceTree = "<group>"; };
+		28B95E7A1CA1599000748F1E /* BBGameBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBGameBackgroundView.m; sourceTree = "<group>"; };
+		28B95E7C1CA15D1D00748F1E /* BBBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBBaseView.h; sourceTree = "<group>"; };
+		28B95E7D1CA15D1D00748F1E /* BBBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBaseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +170,8 @@
 		28B95E631CA1231E00748F1E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				28B95E791CA1599000748F1E /* BBGameBackgroundView.h */,
+				28B95E7A1CA1599000748F1E /* BBGameBackgroundView.m */,
 				28B95E761CA12D6000748F1E /* BBGamePad.h */,
 				28B95E771CA12D6000748F1E /* BBGamePad.m */,
 			);
@@ -230,6 +238,8 @@
 		28B95E6E1CA129C300748F1E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				28B95E7C1CA15D1D00748F1E /* BBBaseView.h */,
+				28B95E7D1CA15D1D00748F1E /* BBBaseView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -372,11 +382,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28B95E7B1CA1599000748F1E /* BBGameBackgroundView.m in Sources */,
 				28B95E6B1CA1262800748F1E /* BBGameViewController.m in Sources */,
 				28B95E331CA11F7500748F1E /* AppDelegate.m in Sources */,
 				28B95E781CA12D6000748F1E /* BBGamePad.m in Sources */,
 				28B95E301CA11F7500748F1E /* main.m in Sources */,
 				28B95E751CA12A0600748F1E /* BBBaseViewController.m in Sources */,
+				28B95E7E1CA15D1D00748F1E /* BBBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

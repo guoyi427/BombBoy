@@ -9,6 +9,7 @@
 #import "BBGameViewController.h"
 
 //  View
+#import "BBGameBackgroundView.h"
 #import "BBGamePad.h"
 
 @interface BBGameViewController() <BBGamePadDelegate>
@@ -25,7 +26,8 @@
 }
 
 - (void)_prepareBackgroundView {
-    UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(-Screen_Width, -Screen_Height, Screen_Width * 3, Screen_Height * 3)];
+    BBGameBackgroundView *backgroundView = [[BBGameBackgroundView alloc] initWithFrame:CGRectMake(-Screen_Width, -Screen_Height,
+                                                                                                  Screen_Width * 3, Screen_Height * 3)];
     [self.view addSubview:backgroundView];
 }
 
@@ -38,7 +40,7 @@
 #pragma mark - GamePad - Delegate
 
 - (void)gamePad:(BBGamePad *)gamePad didMoveHandShankWithDirection:(BBGamePadDirection)direcation {
-    NSLog(@"direction = %d",direcation);
+    NSLog(@"direction = %ld",direcation);
 }
 
 @end
